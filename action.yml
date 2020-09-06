@@ -1,0 +1,7 @@
+name: 'scheduled ping'
+description: 'pings the specified URL every 25 minutes'
+author: 'Abhishek Sisodiya'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  

@@ -4,4 +4,6 @@ author: 'Abhishek Sisodiya'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  
+branding:
+  icon: 'clock'  
+  color: 'green'

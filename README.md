@@ -59,4 +59,4 @@ For more information about cron syntax, see ["Events that trigger workflows"](ht
 We can use this action to keep your Heroku Free app active by setting up a time interval of 20-29 minutes to ping at your app.
 Heroku Free dyno goes to sleep mode if it receives no web traffic in a 30-minute period.
 
-There are many other use cases. Use your creativity to explore more :smiley:
+There are many other use cases. Use your creativity to explore more :beers:

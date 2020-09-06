@@ -1,10 +1,6 @@
 name: 'scheduled ping'
 description: 'pings the specified URL every 25 minutes'
 author: 'Abhishek Sisodiya'
-outputs:
-  header:
-    description: "header of the site pinged"
-
 runs:
   using: 'docker'
   image: 'Dockerfile'

@@ -1,4 +1,4 @@
-# pinger
+# Scheduled Ping
 
 This action pings your specified url every 25 minutes(changeable)
 

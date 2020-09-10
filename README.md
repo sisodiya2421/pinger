@@ -54,9 +54,3 @@ Remember the shortest interval you can run scheduled workflows is once every 5 m
 
 For more information about cron syntax, see ["Events that trigger workflows"](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events).
 
-### Use case
-
-We can use this action to keep your Heroku Free app active by setting up a time interval of 20-29 minutes to ping at your app.
-Heroku Free dyno goes to sleep mode if it receives no web traffic in a 30-minute period.
-
-There are many other use cases. Use your creativity to explore more :beers:

@@ -1,6 +1,6 @@
 # Scheduled Ping
 
-This action pings your specified url every 25 minutes(changeable)
+This action pings your specified URL every 30 minutes(**changeable**) and generates timing details using [cURL](https://curl.haxx.se/).
 
 ## Secrets
 
@@ -17,12 +17,12 @@ to get details about adding secrets to your repository
 
 ```yml
 name: Scheduled Ping
-# This workflow is triggered at a scheduled interval of every 25 minutes
+# This workflow is triggered at a scheduled interval of every 30 minutes
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string.
-    # /25 denotes that it will run once every 25 minutes
-    - cron:  '*/25 * * * *'
+    # /30 denotes that it will run once every 30 minutes
+    - cron:  '*/30 * * * *'
 
 jobs:
   pinger_job:
@@ -35,8 +35,8 @@ jobs:
         uses: sisodiya2421/pinger@master
 ```
 
-**NOTE** You can change the time interval according to your own need. *Default is 25 minutes*. All you
-need to do is just replace `'*/25 * * * *'` in line `- cron: '*/25 * * * *'` with your suitable timing.
+**NOTE** You can change the time interval according to your own need. *Default is 30 minutes*. All you
+need to do is just replace `'*/30 * * * *'` in line `- cron: '*/30 * * * *'` with your suitable timing.
 Remember the shortest interval you can run scheduled workflows is once every 5 minutes.
 
 ### Some patterns for help

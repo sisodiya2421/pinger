@@ -3,7 +3,6 @@
 # will throw error if variable is unset
 set -eu
 
-echo "Sending request to URL: $URL "
 # curl command to ping the url specified in github secrets
 curl -w @- -o /dev/null -s "$URL" <<'EOF'
     time_namelookup:  %{time_namelookup}\n

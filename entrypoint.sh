@@ -4,7 +4,7 @@
 set -eu
 
 # curl command to ping the url specified in github secrets
-curl -w @- -o /dev/null -s "$URL" <<'EOF'
+curl -X "${METHOD:-GET}" -w @- -o /dev/null -s "$URL" <<'EOF'
     time_namelookup:  %{time_namelookup}\n
        time_connect:  %{time_connect}\n
     time_appconnect:  %{time_appconnect}\n

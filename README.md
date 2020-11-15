@@ -30,6 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       URL: ${{ secrets.URL }}
+      METHOD: GET  # the method used to make the request. It is GET by default
     steps:
       - id: ping
         uses: sisodiya2421/pinger@master
@@ -51,5 +52,7 @@ Remember the shortest interval you can run scheduled workflows is once every 5 m
 // Every 10 minutes
 */10 * * *
 ```
+
+You can also take a look at [crontab.guru](https://crontab.guru) to construct a cron.
 
 For more information about cron syntax, see ["Events that trigger workflows"](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events).
